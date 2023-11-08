@@ -1,8 +1,365 @@
 @import "vars"
 @import "fonts"
 
+//start global style
+body 
+    font-family: $main-font
+    font-size: 17px
+    font-weight: 400
+    margin: 0
+p 
+    margin-top: 0 
+    margin-bottom: 0
+.special-offer__content 
+    margin-left: auto 
+    margin-right: auto 
+    width: 100vw 
+    max-width: 680px
+.container 
+    width: 90.933% 
+    margin-left: auto
+    margin-right: auto
+//end global style
 
+//start header style 
+.special-offer__header
+    background: #FB086A
+    color: #fff
+    padding-top: 7px 
+    padding-bottom: 7px
+    font-size: 15px
+    font-weight: 500
+.special-offer__header .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+.header__transparent-button
+    display: flex
+    align-items: center
+    border-radius: 9px
+    border: 1px solid rgba(255, 255, 255, 0.28)
+    padding: 0px 10px
+    padding-right: 0
+    height: 30px
+.header-icon
+    display: block 
+    margin-left: 10px 
+    margin-right: 10px
+.header__button
+    background: #fff 
+    color: $pink 
+    display: flex 
+    align-items: center
+    height: 30px 
+    border-radius: 9px
+    padding-left: 12px 
+    padding-right: 12px
+    text-decoration: none
+    img 
+        margin-left: 5px
+//end header style
 
+//start face section style
+.face-section
+    padding-top: 65px
+    background: url('../img/yellow-bg.svg') no-repeat top -22px left, url('../img/blue-bg.svg') no-repeat top -45px right
+.faces-row
+    width: 100%
+    margin-left: auto 
+    margin-right: auto
+    max-width: 100%
+    display: flex 
+    justify-content: space-between
+    align-items: center
+.face-item
+    box-sizing: border-box
+    width: 135px 
+    height: 135px 
+    border-radius: 50%
+    border: 4px solid #DDE7EB
+    padding: 5px
+    background: #fff
+    position: relative
+.photo 
+    border-radius: 50%
+    width: 100% 
+    height: 100% 
+    object-fit: cover 
+    object-position: center
+.face-item--3
+    width: 190px 
+    height: 190px
+    border-color: #FEBAD6
+    border-width: 6px
+    padding: 6px
+.face-item--2
+    transform: translateY(-30%)
+.face-item__distance
+    position: absolute 
+    top: -18px
+    left: 50% 
+    transform: translateX(-50%) translateY(-100%)
+    white-space: nowrap
+    font-size: 14px
+    border-radius: 9px
+    border: 1px solid rgba(251, 8, 106, 0.28)
+    padding: 4px 10px
+//end face section style
+
+//start flirtu dating section
+.flirtu-dating
+    padding-top: 15px
+    padding-bottom: 50px
+.flirtu-logo
+    margin-left: auto 
+    margin-right: auto
+    display: block
+    margin-bottom: 17.5px
+.h1 
+    text-align: center
+    font-size: 35px 
+    font-weight: 700
+    margin-bottom: 16px
+.text-center 
+    text-align: center
+.price-wrapper .container
+    display: flex 
+    justify-content: center 
+    align-items: center
+.price__new
+    font-size: 35px 
+    font-weight: 700
+    color: $pink
+.price__old
+    font-size: 18.3px 
+    font-weight: 600
+    color: #9AABB4
+    margin-left: 10px
+    margin-right: 10px
+    position: relative
+.price__old:after
+    content: ''
+    top: 50%
+    left: 0 
+    width: 33.106px
+    height: 2px
+    box-shadow: 0px 2px 0px 0px #F9FDFE
+    position: absolute
+    display: block
+    background: #9AABB4
+    transform: rotate(-30deg) translateY(-50%)
+.price__save
+    font-size: 15px
+    color: #35B408
+    font-weight: 500
+    border-radius: 9px
+    background: rgba(60, 201, 14, 0.28)
+    padding: 7px 10px
+.price-wrapper
+    background: url('../img/price-bg.svg')
+    background-repeat: no-repeat
+    background-position: bottom left
+    padding-bottom: 18px
+.button-wrapper
+    display: flex 
+    justify-content: center
+.button 
+    background: $blue
+    color: #fff
+    display: flex 
+    align-items: center
+    padding: 10px 28px 
+    border-radius: 70px
+    cursor: pointer
+    text-decoration: none
+    font-size: 18px 
+    font-weight: 700
+    box-shadow: 0px 0px 10px 0px rgba(51, 169, 223, 0.57), -10px 10px 150px 0px rgba(51, 169, 223, 0.23)
+    img 
+        display: block 
+        margin-left: 10px
+.text-list
+    text-align: center
+    margin-top: 15px
+    line-height: 153%
+//end flirtu dating section
+
+//start how it works section 
+.how-it-work
+    padding-top: 130px
+    background: url('../img/how-it-work2.svg') top right no-repeat, url('../img/how-it-work.svg') no-repeat top 30px center  / cover
+.how-it-work__image
+    width: 100% 
+    height: 100% 
+    object-fit: cover 
+    object-position: center
+    border-radius: 14px
+    position: absolute 
+    top: 0 
+    left: 0
+.how-it-work__item
+    border-radius: 14px
+    height: 805px
+    overflow: hidden
+    margin-bottom: 12px
+    position: relative
+    padding: 24px
+    display: flex
+    align-items: flex-end
+    color: #fff
+    p 
+        margin-bottom: 12px
+.how-it-work__icon
+    position: absolute 
+    top: 32%
+    left: 0
+    z-index: 99
+    width: 180px
+.how-it-work__item-content
+    position: relative
+    z-index: 9
+    display: flex 
+    flex-direction: column 
+    align-items: flex-start
+.how-it-work__item-title
+    font-size: 28px 
+    font-weight: 700
+    margin-bottom: 8px
+.button-transparent 
+    border: 1px solid rgba(255, 255, 255, 0.52)
+    padding: 8.3px 16px
+    font-weight: 700
+    display: flex
+    align-items: center
+    border-radius: 70px
+    font-family: $secondary-font
+    img 
+        display: block 
+        margin-left: 10px
+.how-it-work__item:nth-child(2)
+    .how-it-work__icon
+        top: 0 
+        left: 100%
+        transform: translateX(-100%)
+        width: 140px
+.how-it-work
+    padding-bottom: 20px
+.how-it-works__title
+    margin-left: auto 
+    margin-right: auto
+    display: flex 
+    justify-content: center
+    transform: rotate(-7deg) translateY(5px)
+    position: relative
+    z-index: 99
+.how-it-works__title-content
+    position: absolute 
+    top: 50% 
+    left: 50% 
+    transform: translateY(-50%) translateX(-50%)
+    font-size: 15.15px 
+    color: #fff
+    font-weight: 600
+    margin-left: 3px
+//end how it works section
+
+//start become parth 
+.become-parth 
+    padding-top: 80px 
+    padding-bottom: 40px
+.become-parth__item
+    background: #32A9DF
+    border-radius: 23px
+    padding-left: 32px 
+    padding-right: 32px 
+    padding-bottom: 48px
+    position: relative
+.become-parth-bg
+    position: absolute 
+    top: 50% 
+    left: 50% 
+    transform: translateX(-50%) translateY(-50%)
+
+.become-parth__photos-wrapper
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+.become-parth__photos
+    margin-top: -50px   
+    display: block
+.how-it-work-title__l
+    img
+        width: 240px
+    .how-it-works__title-content
+        white-space: nowrap
+    .how-it-works__title-content
+        font-size: 19px
+.how-it-work-title__l
+    margin-top: -80px
+.become-parth__content
+    text-align: center
+    padding-top: 50px
+    position: relative
+    z-index: 99
+.become-parth__title
+    color: #FDF5E7
+    font-size: 35px 
+    font-weight: 700
+    margin-bottom: 7.5px
+.become-path__text
+    color: #F3F9FF
+    margin-bottom: 16px
+.telegram-button
+    border-radius: 70px
+    background: #F3F9FF
+    box-shadow: 0px 0px 10px 0px rgba(51, 169, 223, 0.57), -10px 10px 150px 0px rgba(51, 169, 223, 0.23)
+    display: flex 
+    justify-content: center 
+    align-items: center
+    color: #33A9DF
+    text-decoration: none
+    font-family: $secondary-font
+    cursor: pointer
+    padding: 10px 20px
+    font-weight: 700
+    font-size: 18.3px
+    img 
+        margin-left: 10px
+.become-parth__footer
+    text-align: center
+    margin-top: 21px 
+    color: #FDF5E7
+.become-parth__photos-wrapper
+    position: relative
+    z-index: 99
+//end become parth 
+
+//start footer style
+.footer 
+    text-align: center 
+    padding-bottom: 25px
+.footer__copy
+    font-size: 14.8px
+    margin-bottom: 7px
+    color: #020101
+.footer__adress
+    font-size: 12px 
+    color: rgba(#020101, .5)
+    margin-bottom: 24px
+.footer__menu-link
+    color: #020101 
+    font-size: 13px
+    text-decoration: none
+.footer__menu
+    display: flex 
+    justify-content: center 
+    align-items: center
+.dot 
+    display: block 
+    margin-left: 5px 
+    margin-right: 5px
+//end footer style 
 
 @import "media"
 
